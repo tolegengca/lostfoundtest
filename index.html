@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Lost and Found</title>
+</head>
+<body>
+    <header>
+        <h1>Lost and Found</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#lost">Lost Items</a></li>
+            <li><a href="#found">Found Items</a></li>
+        </ul>
+    </nav>
+
+    <section id="lost">
+        <h2>Lost Items</h2>
+        <div class="item">
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4298" data-width="100%"></script>
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4297" data-width="100%"></script>
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4296" data-width="100%"></script>
+
+        </div>
+    </section>
+
+    <section id="found">
+        <h2>Found Items</h2>
+        <div class="item">
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4295" data-width="100%"></script>
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4294" data-width="100%"></script>
+            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4293" data-width="100%"></script>
+
+        </div>
+        
+    </section>
+
+    <!-- Add this button inside your HTML body where you want it to appear -->
+    <a href="https://t.me/ipayed" target="_blank" class="telegram-button">Click if you are lost or found something</a>
+
+    <section id="submit">
+        <h2>Submit Your Lost or Found</h2>
+        <form action="submit.php" method="post">
+            <label for="itemName">Telegram ID:</label>
+            <input type="text" id="itemName" name="itemName" required>
+            
+            <label for="itemDescription"> Description:</label>
+            <textarea id="itemDescription" name="itemDescription" rows="4" required></textarea>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <hr>
+
+    <footer>
+        <p>&copy; 2023 Lost and Found</p>
+    </footer>
+
+</body>
+</html>
