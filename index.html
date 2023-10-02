@@ -4,61 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <title>Lost and Found</title>
+    <nav>
+        <ul>
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="basics.html">Basics</a></li> 
+            <li><a href="instructions.html">Instructions</a></li>
+            <li><a href="examples.html">Examples</a></li>
+            <li><a href="resources.html">Resources</a></li>
+        </ul>
+    </nav>
 </head>
 <body>
     <header>
-        <h1>Lost and Found</h1>
+        <h1>Welcome to Assembly Language Learning</h1>
     </header>
+
+
+    <section id="overview">
+        <h2>What is Assembly Language?</h2>
+        <p>Assembly language is a low-level programming language that provides a human-readable representation of the instructions that a computer's central processing unit (CPU) can execute directly. Unlike high-level programming languages, which are designed to be more user-friendly and abstract, assembly language is closely tied to the architecture of the underlying computer hardware.</p>
     
-    <nav>
+        <p>Programs written in assembly language are typically composed of a series of mnemonic instructions that correspond to specific machine code instructions. These instructions can manipulate data, perform arithmetic operations, control program flow, and interact with hardware components at a very granular level.</p>
+    
+        <p>Assembly language is often used in situations where fine-grained control over hardware resources, system optimization, or direct interaction with hardware is required. It is commonly used in areas such as embedded systems development, device drivers, operating system kernels, and reverse engineering.</p>
+    </section>
+    <section id="overview">
+        <h2>Overview of Assembly Language</h2>
+        <p>Assembly language is a low-level programming language that provides a human-readable representation of a computer's machine code instructions. It is a bridge between high-level programming languages and the hardware of a computer.</p>
+        <p>Programs written in assembly language interact directly with the central processing unit (CPU) and memory, making it a powerful tool for tasks that require precise control over hardware resources.</p>
+    </section>
+
+    <section id="why-learn">
+        <h2>Why Learn Assembly Language?</h2>
+        <p>Learning assembly language offers several benefits:</p>
         <ul>
-            <li><a href="#lost">Lost Items</a></li>
-            <li><a href="#found">Found Items</a></li>
+            <li><strong>Low-Level Understanding:</strong> Gain a deep understanding of how a computer's CPU and memory work at the lowest level.</li>
+            <li><strong>Efficiency:</strong> Write highly optimized code for tasks where performance is critical.</li>
+            <li><strong>Embedded Systems:</strong> It is essential for programming embedded systems, microcontrollers, and IoT devices.</li>
+            <li><strong>Reverse Engineering:</strong> Understand and analyze software and hardware at the binary level.</li>
+            <li><strong>Operating Systems:</strong> Develop device drivers and understand the internals of operating systems.</li>
         </ul>
-    </nav>
-
-    <section id="lost">
-        <h2>Lost Items</h2>
-        <div class="item">
-            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4298" data-width="100%"></script>
-            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4297" data-width="100%"></script>
-            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4296" data-width="100%"></script>
-
-        </div>
     </section>
 
-    <section id="found">
-        <h2>Found Items</h2>
-        <div class="item">
-            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4295" data-width="100%"></script>
-            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4294" data-width="100%"></script>
-            <script async src="https://telegram.org/js/telegram-widget.js?22" data-telegram-post="findAITU/4293" data-width="100%"></script>
-
-        </div>
-        
+    <section id="getting-started">
+        <h2>Getting Started with Assembly</h2>
+        <p>If you're new to assembly language programming, you're in the right place. Here are some initial steps to get started:</p>
+        <ol>
+            <li><strong>Choose an Architecture:</strong> Decide on the computer architecture you want to learn (e.g., x86, ARM).</li>
+            <li><strong>Set Up Development Tools:</strong> Install an assembler, debugger, and code editor suitable for your chosen architecture.</li>
+            <li><strong>Learn the Basics:</strong> Begin with registers, memory, basic instructions, and simple programs.</li>
+            <li><strong>Practice, Practice, Practice:</strong> Writing assembly code requires practice. Work on small projects to reinforce your knowledge.</li>
+        </ol>
     </section>
 
-    <a href="https://t.me/ipayed" target="_blank" class="telegram-button">Click if you are lost or found something</a>
-
-    <section id="submit">
-        <h2>Submit Your Lost or Found</h2>
-        <form action="submit.php" method="post">
-            <label for="itemName">Telegram ID:</label>
-            <input type="text" id="itemName" name="itemName" required>
-            
-            <label for="itemDescription"> Description:</label>
-            <textarea id="itemDescription" name="itemDescription" rows="4" required></textarea>
-            
-            <input type="submit" value="Submit">
-        </form>
+    <section id="resources">
+        <h2>Assembly Language Resources</h2>
+        <p>Explore our collection of resources to help you learn assembly language:</p>
+        <ul>
+            <li><a href="basics.html">Assembly Language Basics</a></li>
+            <li><a href="instructions.html">Assembly Instructions</a></li>
+            <li><a href="examples.html">Code Examples</a></li>
+            <li><a href="books.html">Recommended Books</a></li>
+        </ul>
     </section>
-    <hr>
 
-    <footer>
-        <p>&copy; 2023 Lost and Found</p>
+
+    <footer style="text-align: center;">
+        <p>&copy; 2023 Assembly Language Learning by Tolegen</p>
     </footer>
-
 </body>
 </html>
